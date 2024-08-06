@@ -2,8 +2,8 @@
 
 [![Build Status](https://github.com/shopware/shopware/actions/workflows/02-unit.yml/badge.svg)](https://github.com/shopware/shopware/actions/workflows/02-unit.yml)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/shopware/platform/badges/quality-score.png)](https://scrutinizer-ci.com/g/shopware/platform/)
-[![Latest Stable Version](https://poser.pugx.org/shopware/shopware/v/stable)](https://packagist.org/packages/shopware/platform)
-[![Total Downloads](https://poser.pugx.org/shopware/shopware/downloads)](https://packagist.org/packages/shopware/platform)
+[![Latest Stable Version](https://poser.pugx.org/shopware/platform/v/stable)](https://packagist.org/packages/shopware/platform)
+[![Total Downloads](https://poser.pugx.org/shopware/platform/downloads)](https://packagist.org/packages/shopware/platform)
 [![Crowdin](https://badges.crowdin.net/shopware6/localized.svg)](https://translate.shopware.com/project/shopware6)
 [![License](https://img.shields.io/github/license/shopware/shopware.svg)](https://github.com/shopware/shopware/blob/trunk/LICENSE)
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/shopware/shopware.svg)](https://github.com/shopware/shopware/pulls)
