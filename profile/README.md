@@ -23,10 +23,6 @@
 
 <p align="center"><strong>Modern open source e-Commerce</strong>
 
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Start%20your%20dev%20journey%20now!&url=https%3A%2F%2Fgithub.com%2Fshopware%2Fplatform&via=ShopwareDevs&hashtags=Shopware6,community)
-</p>
-
-
 Shopware is an open headless commerce platform powered by [Symfony 7](https://symfony.com) and [Vue.js 3](https://vuejs.org) that is used by thousands of shops and supported by a huge worldwide community of developers, agencies and merchants.
 
 If you like Shopware, give us a&nbsp;⭐️ &nbsp;on Github
@@ -38,7 +34,7 @@ If you like Shopware, give us a&nbsp;⭐️ &nbsp;on Github
 * 🧩 &nbsp;Browse more than [5,200 extensions](https://store.shopware.com) that are already available
 * 📖 &nbsp;Learn how to [develop extensions](https://developer.shopware.com) and everything else about the tech behind Shopware
 * 🉐 &nbsp;[Translate](https://translate.shopware.com) Shopware or help by contributing to existing languages
-* 👍 &nbsp;Follow us on [Twitter](https://twitter.com/shopwaredevs) to get updates
+* 👍 &nbsp;Follow us on [Mastodon](https://phpc.social/@ShopwareDevs) to get updates
 * 🛠 &nbsp;[Report bugs](https://issues.shopware.com) in our issue tracker
 * 💡 &nbsp;Give us [feedback](https://feedback.shopware.com/) or vote existing ideas
 * 👪 &nbsp;Exchange with more than 9,000 shopware developers in our [Slack community workspace](https://slack.shopware.com)
