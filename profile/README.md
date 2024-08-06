@@ -7,12 +7,16 @@
 [![License](https://img.shields.io/github/license/shopware/platform.svg)](https://github.com/shopware/platform/blob/trunk/license.txt)
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/shopware/platform.svg)](https://github.com/shopware/platform/pulls)
 [![Slack](https://img.shields.io/badge/chat-on%20slack-%23ECB22E)](https://slack.shopware.com?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Development Template](https://img.shields.io/badge/start%20with-shopware%2Fdevelopment-blue.svg)](https://github.com/shopware/platform)
+[![Shopware repository](https://img.shields.io/badge/start_with-shopware_development-blue.svg)](https://github.com/shopware/shopware?tab=readme-ov-file#installation)
 
 </div>
 
 
-<p align="center"><a href="https://shopware.com" target="_blank" rel="noopener noreferrer"><img width="250" src="https://images.ctfassets.net/nqzs8zsepqpi/2mI5yTktojiFqNsB66pCsA/752bbd8eddb1b2d587d43d4cec09ffa7/composable-customer-experience-illustration.png"></a></p>
+<p align="center">
+  <a href="https://shopware.com" target="_blank" rel="noopener noreferrer">
+    <img width="250" src="https://images.ctfassets.net/nqzs8zsepqpi/2mI5yTktojiFqNsB66pCsA/752bbd8eddb1b2d587d43d4cec09ffa7/composable-customer-experience-illustration.png">
+  </a>
+</p>
 
 <h1 align="center">Shopware</h1>
 
@@ -26,15 +30,15 @@ Shopware is an open headless commerce platform powered by [Symfony 7](https://sy
 
 If you like Shopware, give us a&nbsp;⭐️ &nbsp;on Github
 
-[Discover the shopware repository and help sharpening the future of open commerce](https://github.com/shopware/platform)
+[Discover the shopware repository and help sharpening the future of open commerce](https://github.com/shopware/shopware)
 
 * 🙋‍♂️ &nbsp;[Be part of shopware!](https://www.shopware.com/en/jobs/) ‍&nbsp;We are hiring!  🙋
 * 🌎 &nbsp;Discover our [website](https://www.shopware.com/en/)
-* 🧩 &nbsp;Browse more than [2.500 apps](https://store.shopware.com) that are already available
-* 📖 &nbsp;Learn how to [develop apps](https://developer.shopware.com/docs/) and everything else about the tech behind shopware
+* 🧩 &nbsp;Browse more than [5,200 extensions](https://store.shopware.com) that are already available
+* 📖 &nbsp;Learn how to [develop extensions](https://developer.shopware.com) and everything else about the tech behind Shopware
 * 🉐 &nbsp;[Translate](https://crowdin.com/project/shopware6) Shopware or help by contributing to existing languages
 * 👍 &nbsp;Follow us on [Twitter](https://twitter.com/shopwaredevs) to get updates
-* 🛠 &nbsp;[Report bugs or add feature ideas](https://issues.shopware.com) in our issue tracker
+* 🛠 &nbsp;[Report bugs](https://github.com/shopware/shopware/issues/new/choose) in the issue tracker or [add feature ideas](https://feedback.shopware.com/) in our feedback tool.
 * 🗨 &nbsp;Help and get helped in our - [Community forum](https://forum.shopware.com/)
-* 👪  &nbsp;Exchange with more than 5.000 shopware developers in our  - [Slack](https://slack.shopware.com) 
+* 👪  &nbsp;Exchange with more than 9.000 shopware developers in our  - [Slack](https://slack.shopware.com) 
 * 🕹 &nbsp;[Download Shopware](https://www.shopware.com/de/download/) or start playing with [Dockware](https://github.com/dockware/dockware)
