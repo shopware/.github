@@ -1,0 +1,12 @@
+issuer: https://token.actions.githubusercontent.com
+# TODO: remove test branch
+subject_pattern: repo:shopware/shopware:ref:refs/heads/(trunk|6.5.x|next-38988/add-sync)
+claim_pattern:
+  # TODO: remove test branch and workflow
+  workflow_ref: shopware/shopware/.github/workflows/(sync|nightly).ya?ml@(trunk|6.5.x|next-38988/add-sync)
+
+permissions:
+  contents: write
+
+repositories:
+  - shopware-private
