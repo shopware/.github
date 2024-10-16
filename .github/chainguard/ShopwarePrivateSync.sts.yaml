@@ -10,6 +10,7 @@ claim_pattern:
 permissions:
   contents: write
   actions: write
+  workflows: write
 
 repositories:
   - shopware-private
