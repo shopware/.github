@@ -1,11 +1,9 @@
 # Allows shopware/shopware to push to shopware/shopware-private to keep them in sync
 
 issuer: https://token.actions.githubusercontent.com
-# TODO: remove test branch
-subject_pattern: repo:shopware/shopware:ref:refs/heads/(trunk|6.5.x|next-38988/add-sync)
+subject_pattern: repo:shopware/shopware:ref:refs/heads/(trunk|6.5.x)
 claim_pattern:
-  # TODO: remove test branch and workflow
-  workflow_ref: shopware/shopware/.github/workflows/(sync|nightly).ya?ml@refs/heads/(trunk|6.5.x|next-38988/add-sync)
+  workflow_ref: shopware/shopware/.github/workflows/sync.ya?ml@refs/heads/(trunk|6.5.x)
 
 permissions:
   contents: write
