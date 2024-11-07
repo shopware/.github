@@ -40,3 +40,5 @@ If you like Shopware, give us a&nbsp;⭐️ &nbsp;on Github
 * 👪 &nbsp;Exchange with more than 9,000 shopware developers in our [Slack community workspace](https://slack.shopware.com)
 * 🗨 &nbsp;Help and get helped on [Stack Overflow](https://stackoverflow.com/questions/tagged/shopware6?tab=Newest) or in our [Community forum](https://forum.shopware.com/)
 * 🕹 &nbsp;[Download Shopware](https://www.shopware.com/de/download/) or start playing with [Dockware](https://github.com/dockware/dockware)
+
+Public activity on Shopware repositories may be available through the Shopware Community Hub, see also our [privacy policy](https://www.shopware.com/en/privacy/website/).
