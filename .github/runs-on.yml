@@ -1,0 +1,9 @@
+runners:
+  sw-amd64:
+    family: ["m7i-flex", "m7a", "m7i"]
+    spot: true
+    image: ubuntu24-full-x64
+  sw-arm:
+    family: ["m8g", "m7g"]
+    spot: true
+    image: ubuntu24-full-arm64
