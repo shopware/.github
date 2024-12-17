@@ -1,0 +1,11 @@
+# Allows Clicky to pull its required components
+
+issuer: https://gitlab.shopware.com
+subject_pattern: "project_path:shopware-cloud/tooling/clicky:ref_type:branch:ref:.*"
+
+permissions:
+  contents: read
+
+repositories:
+  - shopware-private
+  - SwagCommercial
