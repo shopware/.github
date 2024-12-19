@@ -1,0 +1,158 @@
+name: Theme
+on:
+  workflow_dispatch:
+  on:
+    push:
+      branches: [ $default-branch ]
+    pull_request:
+      branches: [ $default-branch ]
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    name: Build and validate Theme
+    runs-on: ${{ github.event.act && 'ubuntu-latest' || format('runs-on={0}/runner=sw-amd64', github.run_id) }}
+    if: ${{ github.event_name != 'release' }}
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+          MYSQL_DATABASE: shopware
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=5s --health-timeout=2s --health-retries=3
+        volumes:
+          - /dev/shm/mysql:/var/lib/mysql
+    steps:
+      - name: Setup and Install Theme
+        uses: shopware/github-actions/setup-extension@main
+        with:
+          shopwareVersion: 'trunk'
+          mysqlVersion: 'skip'
+          install: 'true'
+          install-admin: 'true'
+          install-storefront: 'true'
+          env: 'prod'
+          extensionName: '${{ github.event.repository.name }}'
+
+      - name: Validate Snippets
+        run: |-
+          bin/console snippets:validate
+
+      - name: Build Theme
+        uses: shopware/github-actions/build-zip@main
+        env:
+          NODE_OPTIONS: "--openssl-legacy-provider"
+        with:
+          path: 'custom/apps/${{ github.event.repository.name }}'
+          extensionName: '${{ github.event.repository.name }}'
+
+  # Since themes can have different requirements, we need to determine which jobs make sense to run.
+  #
+  # This could be solved by using something like the `hashFiles` function, however, this is unfortunately not available
+  # on the job level, but only on the step level.
+  # See: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#context-availability
+  determine_jobs:
+    name: Determine which jobs to run
+    runs-on: ${{ github.event.act && 'ubuntu-latest' || format('runs-on={0}/runner=sw-amd64', github.run_id) }}
+    outputs:
+      run_test_jest: ${{ steps.should_run.outputs.test_jest }}
+      run_test_playwright: ${{ steps.should_run.outputs.test_playwright }}
+    env:
+      STOREFRONT_PATH: "Resources/app/storefront"
+      JOBS: "test_jest test_playwright"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: shopware/.github
+          path: dotgithub
+
+      - id: should_run
+        env:
+          DEBUG: ${{ github.event.act }}
+        run: |-
+          # We actually need the job names to be split here, so no quotes
+          # shellcheck disable=SC2086
+          dotgithub/workflow-templates/bin/theme/determine-jobs.sh ${JOBS}
+
+      - name: Activating jobs
+        run: |-
+          echo '${{ toJSON(steps.should_run.outputs) }}'
+
+  test_jest:
+    name: Unit tests (Jest)
+    runs-on: ${{ github.event.act && 'ubuntu-latest' || format('runs-on={0}/runner=sw-amd64', github.run_id) }}
+    needs:
+      - determine_jobs
+    if: ${{ needs.determine_jobs.outputs.run_test_jest == 'true' }}
+    env:
+      STOREFRONT_PATH: "Resources/app/storefront"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: shopware/.github
+          path: dotgithub
+
+      - name: Execute Jest tests
+        run: |-
+          dotgithub/workflow-templates/bin/theme/test-jest.sh
+
+  test_playwright:
+    name: Run playwright tests
+    runs-on: ${{ github.event.act && 'ubuntu-latest' || format('runs-on={0}/runner=sw-amd64', github.run_id) }}
+    needs:
+      - determine_jobs
+    if: ${{ needs.determine_jobs.outputs.run_test_playwright == 'true' }}
+    env:
+      APP_PATH: "custom/apps/${{ github.event.repository.name }}" # This is needed, since the setup-extension action will move our source code
+      TESTS_PATH: "tests/acceptance"
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+          MYSQL_DATABASE: shopware
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=5s --health-timeout=2s --health-retries=3
+        volumes:
+          - /dev/shm/mysql:/var/lib/mysql
+    steps:
+      - name: Setup and Install Theme
+        uses: shopware/github-actions/setup-extension@main
+        with:
+          shopwareVersion: 'trunk'
+          mysqlVersion: 'skip'
+          install: 'true'
+          install-admin: 'true'
+          install-storefront: 'true'
+          env: 'prod'
+          extensionName: '${{ github.event.repository.name }}'
+
+      - uses: actions/checkout@v4
+        with:
+          repository: shopware/.github
+          path: dotgithub
+
+      - name: Setup Integration for Playwright
+        run: |-
+          dotgithub/workflow-templates/bin/theme/test-playwright.sh setup_integration
+
+      - name: Execute Playwright tests
+        run: |-
+          dotgithub/workflow-templates/bin/theme/test-playwright.sh playwright
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30

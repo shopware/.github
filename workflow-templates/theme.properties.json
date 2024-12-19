@@ -1,0 +1,12 @@
+{
+  "name": "Shopware Theme CI",
+  "description": "A workflow template for Shopware themes.",
+  "iconName": "paintbrush",
+  "categories": [
+    "PHP",
+    "Shopware"
+  ],
+  "filePatterns": [
+    "manifest.xml"
+  ]
+}
