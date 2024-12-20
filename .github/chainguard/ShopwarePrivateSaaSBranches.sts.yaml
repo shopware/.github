@@ -1,0 +1,15 @@
+# Allows shopware/shopware-private to create branches in SwagCommercial and Rufus
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/shopware-private:ref:refs/heads/trunk
+claim_pattern:
+  workflow_ref: shopware/shopware-private/.github/workflows/saas-branch.ya?ml@refs/heads/trunk
+
+permissions:
+  contents: write
+  workflows: write
+
+repositories:
+  - shopware-private
+  - SwagCommercial
+  - Rufus
