@@ -1,0 +1,21 @@
+# Allows our saas-template to pull its required components
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/saas:.*
+
+permissions:
+  contents: read
+
+repositories:
+  - shopware-private
+  - Rufus
+  - SwagCommercial
+  - SwagDynamicAccess
+  - SwagPublisher
+  - SwagCmsExtensions
+  - SwagCustomizedProducts
+  - SwagMigrationAssistant
+  - SwagLanguagePack
+  - SwagPayPal
+  - SwagSocialShopping
+  - swagdigitalsalesrooms
