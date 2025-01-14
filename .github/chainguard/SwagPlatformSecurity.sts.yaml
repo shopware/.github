@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/SwagPlatformSecurity:.*
+
+permissions:
+  contents: read
+
+repositories:
+  - SwagCommercial
