@@ -1,0 +1,13 @@
+# Allows shopware/shopware to read collaborators
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/shopware(-private)?:.*
+claim_pattern:
+  workflow_ref: shopware/shopware(-private)?/.github/workflows/downstream.ya?ml@.*
+
+permissions:
+  metadata: read
+
+repositories:
+  - shopware
+  - shopware-private
