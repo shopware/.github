@@ -1,7 +1,7 @@
 # Allows our saas-template to pull its required components
 
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: repo:shopware/saas:.*
+subject_pattern: repo:shopware/(saas|Rufus):.*
 
 permissions:
   contents: read
