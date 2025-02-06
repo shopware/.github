@@ -1,0 +1,12 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/shopware(-private)?:.*
+claim_pattern:
+  workflow_ref: shopware/shopware(-private)?/.github/workflows/nightly.ya?ml@refs/heads/trunk
+
+permissions:
+  actions: write
+  contents: read
+
+repositories:
+  - shopware
+  - shopware-private
