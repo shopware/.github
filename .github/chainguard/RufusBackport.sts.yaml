@@ -1,0 +1,11 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/Rufus:.*
+claim_pattern:
+  workflow_ref: shopware/Rufus/.github/workflows/backport.ya?ml@refs/heads/trunk
+
+permissions:
+  contents: write
+  pull_requests: write
+
+repositories:
+  - Rufus
