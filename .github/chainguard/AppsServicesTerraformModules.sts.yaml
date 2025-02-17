@@ -1,9 +1,9 @@
 # Allows repositories in shopware organization read access to apps & services terraform modules
 
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: repo:shopware/*
+subject_pattern: repo:shopware/.*
 claim_pattern:
-  workflow_ref: shopware/*/.github/workflows/*
+  workflow_ref: shopware/.*/.github/workflows/.*
 
 permissions:
   contents: read
