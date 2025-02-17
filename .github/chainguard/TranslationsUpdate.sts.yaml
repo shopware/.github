@@ -1,0 +1,18 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/translations:.*
+claim_pattern:
+  workflow_ref: shopware/translations/.github/workflows/update-translations.yml@refs/heads/main
+
+permissions:
+  contents: read
+
+repositories:
+  - SwagPublisher
+  - SwagB2bPlatform
+  - SwagCmsExtensions
+  - SwagCommercial
+  - SwagCustomizedProducts
+  - SwagMigrationAssistant
+  - SwagMigrationMagento
+  - SwagPayPal
+  - SwagSocialShopping
