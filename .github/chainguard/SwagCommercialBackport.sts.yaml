@@ -1,7 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
 subject_pattern: repo:shopware/SwagCommercial:.*
 claim_pattern:
-  workflow_ref: shopware/SwagCommercial/.github/workflows/backport.ya?ml@refs/heads/trunk
+  workflow_ref: shopware/SwagCommercial/.github/workflows/backport.ya?ml.*
 
 permissions:
   contents: write
