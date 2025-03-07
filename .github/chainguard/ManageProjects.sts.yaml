@@ -1,0 +1,16 @@
+# Allows shopware/shopware to read collaborators
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/shopware(-private)?:.*
+claim_pattern:
+  workflow_ref: shopware/shopware(-private)?/.github/workflows/01-pr-issue-labeler.ya?ml@.*
+
+permissions:
+  pull_requests: read
+  issues: read
+  organization_projects: write
+  repository_projects: write
+
+repositories:
+  - shopware
+  - shopware-private
