@@ -3,7 +3,7 @@
 issuer: https://token.actions.githubusercontent.com
 subject_pattern: repo:shopware/shopware(-private)?:.*
 claim_pattern:
-  workflow_ref: shopware/shopware(-private)?/.github/workflows/downstream.ya?ml@.*
+  workflow_ref: shopware/shopware(-private)?/.github/workflows/.*
 
 permissions:
   metadata: read
