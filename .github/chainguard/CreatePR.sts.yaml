@@ -1,0 +1,15 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/.*:.*
+claim_pattern:
+  workflow_ref: shopware/.*
+permissions:
+  contents: write
+  pull_requests: write
+  workflows: write
+
+repositories:
+  - Rufus # backport
+  - SwagCommercial # backport
+  - shopware # backport
+  - shopware-private # backport
+  - SwagPayPal
