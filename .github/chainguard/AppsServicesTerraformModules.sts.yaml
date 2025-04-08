@@ -12,3 +12,4 @@ repositories:
   - terraform-app-hosting-infra-modules
   - terraform-app-hosting-ecs-module
   - terraform-app-hosting-static-web-module
+  - services-aws-tags-module
