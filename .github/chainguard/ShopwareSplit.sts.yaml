@@ -1,0 +1,15 @@
+# Allows shopware to push to administration, core, elasticsearch & storefront
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/shopware:ref:.*
+claim_pattern:
+  workflow_ref: shopware/shopware/.github/workflows/05-prepare-release.yml@.*
+
+permissions:
+  contents: write
+
+repositories:
+  - administration
+  - core
+  - elasticsearch
+  - storefront
