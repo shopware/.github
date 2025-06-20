@@ -1,0 +1,13 @@
+# Allows shopware/shopware-business-platform to read images from shopware/php-images
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/shopware-business-platform:.*
+claim_pattern:
+  workflow_ref: shopware/shopware-business-platform/.github/workflows/.*
+
+permissions:
+  contents: read
+  metadata: read
+
+repositories:
+  - php-images
