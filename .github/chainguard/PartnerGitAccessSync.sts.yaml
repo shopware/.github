@@ -1,7 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
 subject_pattern: repo:shopware/partner-git-access:.*
 claim_pattern:
-  workflow_ref: shopware/partner-git-access/.github/workflows/(cron|test).ya?ml@refs/heads/.*
+  workflow_ref: shopware/partner-git-access/.github/workflows/(cron|test).ya?ml@.*
 
 permissions:
   contents: read
