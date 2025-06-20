@@ -1,0 +1,14 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/partner-git-access:ref:refs/heads/main
+claim_pattern:
+  workflow_ref: shopware/partner-git-access/.github/workflows/cron.ya?ml@refs/heads/main
+
+permissions:
+  contents: read
+  # required for PR sync in the future
+  # contents: write
+  # actions: write
+  # workflows: write
+
+# allow all repos
+repositories: []
