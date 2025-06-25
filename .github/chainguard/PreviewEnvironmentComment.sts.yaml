@@ -1,0 +1,10 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/shopware:.*
+claim_pattern:
+  workflow_ref: shopware/saas/.github/workflows/preview-environment.yml@.*
+
+permissions:
+  pull_requests: write
+
+# Allow access to all repositories of the shopware organization
+repositories: []
