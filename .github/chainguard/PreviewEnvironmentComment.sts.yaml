@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: repo:shopware/shopware:.*
+subject_pattern: repo:shopware/saas:.*
 claim_pattern:
   workflow_ref: shopware/saas/.github/workflows/preview-environment.yml@.*
 
