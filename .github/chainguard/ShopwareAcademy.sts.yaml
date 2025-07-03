@@ -1,0 +1,14 @@
+# Allows Shopware Learning Environments in Community Hub be pre-installed with selected premium extensions
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/academy-shopdev-plugin:.*
+
+permissions:
+  contents: read
+
+repositories:
+  - SwagCommercial
+  - SwagCustomizedProducts
+  - SwagPayPal
+  - SwagSocialShopping
+  - swagdigitalsalesrooms
