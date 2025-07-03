@@ -35,7 +35,7 @@ If you like Shopware, give us a&nbsp;⭐️ &nbsp;on Github
 * 📖 &nbsp;Learn how to [develop extensions](https://developer.shopware.com) and everything else about the tech behind Shopware
 * 🉐 &nbsp;[Translate](https://translate.shopware.com) Shopware or help by contributing to existing languages
 * 👍 &nbsp;Follow us on [Mastodon](https://phpc.social/@ShopwareDevs) to get updates
-* 🛠 &nbsp;[Report bugs](https://issues.shopware.com) in our issue tracker
+* 🛠 &nbsp;[Report bugs](https://github.com/shopware/shopware/issues/new/choose) on GitHub
 * 💡 &nbsp;Give us [feedback](https://feedback.shopware.com/) or vote existing ideas
 * 👪 &nbsp;Exchange with more than 9,000 shopware developers in our [Slack community workspace](https://slack.shopware.com)
 * 🗨 &nbsp;Help and get helped on [Stack Overflow](https://stackoverflow.com/questions/tagged/shopware6?tab=Newest) or in our [Community forum](https://forum.shopware.com/)
