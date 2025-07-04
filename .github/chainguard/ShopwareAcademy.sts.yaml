@@ -2,7 +2,8 @@
 
 issuer: https://token.actions.githubusercontent.com
 subject_pattern: repo:shopware/academy-shopdev-plugin:.*
-
+claim_pattern:
+  workflow_ref: shopware/academy-shopdev-plugin/.github/workflows/create-template.yml@.*
 permissions:
   contents: read
 
