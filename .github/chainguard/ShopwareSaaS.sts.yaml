@@ -5,6 +5,7 @@ subject_pattern: repo:shopware/(saas|Rufus):.*
 
 permissions:
   contents: write
+  members: read
 
 repositories:
   - shopware-private
