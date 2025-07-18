@@ -1,0 +1,15 @@
+# Allows gh-project-automation to read and delete branches
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/gh-project-automation:ref:refs/heads/main
+claim_pattern:
+  workflow_ref: shopware/gh-project-automation/.github/workflows/branch-cleanup.yml@refs/heads/main
+
+permissions:
+  contents: write
+
+repositories:
+  - shopware
+  - shopware-private
+  - SwagCommercial
+  - Rufus
