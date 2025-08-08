@@ -7,7 +7,7 @@
 [![Crowdin](https://badges.crowdin.net/shopware6/localized.svg)](https://translate.shopware.com/project/shopware6)
 [![License](https://img.shields.io/github/license/shopware/shopware.svg)](https://github.com/shopware/shopware/blob/trunk/LICENSE)
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/shopware/shopware.svg)](https://github.com/shopware/shopware/pulls)
-[![Slack](https://img.shields.io/badge/chat-on%20slack-%23ECB22E)](https://slack.shopware.com?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Discord](https://img.shields.io/badge/chat-on%20discord-%23ECB22E)](https://chat.shopware.com/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Shopware repository](https://img.shields.io/badge/start_with-shopware_development-blue.svg)](https://github.com/shopware/shopware?tab=readme-ov-file#installation)
 
 </div>
@@ -23,7 +23,8 @@
 
 <p align="center"><strong>Modern open source e-Commerce</strong>
 
-Shopware is an open headless commerce platform powered by [Symfony 7](https://symfony.com) and [Vue.js 3](https://vuejs.org) that is used by thousands of shops and supported by a huge worldwide community of developers, agencies and merchants.
+Shopware 6 is an open headless commerce platform powered by [Symfony 7](https://symfony.com) and [Vue.js 3](https://vuejs.org) that is used by thousands of shops and supported by a huge, [worldwide community](https://chat.shopware.com/) of developers, agencies and merchants.
+
 
 If you like Shopware, give us a&nbsp;⭐️ &nbsp;on Github
 
@@ -37,7 +38,7 @@ If you like Shopware, give us a&nbsp;⭐️ &nbsp;on Github
 * 👍 &nbsp;Follow us on [Mastodon](https://phpc.social/@ShopwareDevs) to get updates
 * 🛠 &nbsp;[Report bugs](https://github.com/shopware/shopware/issues/new/choose) on GitHub
 * 💡 &nbsp;Give us [feedback](https://feedback.shopware.com/) or vote existing ideas
-* 👪 &nbsp;Exchange with more than 9,000 shopware developers in our [Slack community workspace](https://slack.shopware.com)
+* 👪 &nbsp;Exchange with other Shopware developers in our own [Community Hub](https://hub.shopware.com/) or the [Discord community](https://chat.shopware.com/)
 * 🗨 &nbsp;Help and get helped on [Stack Overflow](https://stackoverflow.com/questions/tagged/shopware6?tab=Newest) or in our [Community forum](https://forum.shopware.com/)
 * 🕹 &nbsp;[Download Shopware](https://www.shopware.com/en/download/) or start playing with [Dockware](https://github.com/dockware/dockware)
 
