@@ -8,6 +8,7 @@ permissions:
   members: read
 
 repositories:
+  - shopware
   - shopware-private
   - Rufus
   - SwagCommercial
