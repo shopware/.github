@@ -1,9 +1,9 @@
 # Allows shopware/shopware to push to shopware/shopware-private to keep them in sync
 
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: repo:shopware/shopware:ref:refs/heads/(trunk|6.5.x|6.6.x|6.7.0.0)
+subject_pattern: repo:shopware/shopware:ref:refs/heads/(trunk|6.[0-9]+.x|6.[0-9]+.[0-9]+.x)
 claim_pattern:
-  workflow_ref: shopware/shopware/.github/workflows/sync.ya?ml@refs/heads/(trunk|6.5.x|6.6.x|6.7.0.0)
+  workflow_ref: shopware/shopware/.github/workflows/sync.ya?ml@refs/heads/(trunk|6.[0-9]+.x|6.[0-9]+.[0-9]+.x)
 
 permissions:
   contents: write
