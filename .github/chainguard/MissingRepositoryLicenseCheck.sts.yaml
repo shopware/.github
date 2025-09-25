@@ -1,0 +1,11 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/gh-project-automation:ref:refs/heads/main
+claim_pattern:
+  workflow_ref: shopware/gh-project-automation/.github/workflows/check-missing-repository-license.yml@refs/heads/main
+
+permissions:
+  contents: read
+  metadata: read
+
+# Allow access to all repositories of the shopware organization
+repositories: []
