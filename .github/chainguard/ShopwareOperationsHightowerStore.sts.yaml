@@ -1,0 +1,11 @@
+# Allows shopware-operations/hightower-store to pull its required components
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware-operations/hightower-store:.*
+
+permissions:
+  contents: read
+
+repositories:
+  - SwagCommercial
+  - SwagCustomizedProducts
