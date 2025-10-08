@@ -13,3 +13,4 @@ repositories:
   - terraform-app-hosting-ecs-module
   - terraform-app-hosting-static-web-module
   - services-aws-tags-module
+  - services-aws-cloudfront-s3-module
