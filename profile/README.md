@@ -33,7 +33,7 @@ If you like Shopware, give us a&nbsp;⭐️ &nbsp;on Github
 * 🙋‍♂️ &nbsp;[Be part of shopware!](https://www.shopware.com/en/jobs/) ‍&nbsp;We are hiring!  🙋
 * 🌎 &nbsp;Discover our [website](https://www.shopware.com/en/)
 * 🧩 &nbsp;Browse more than [5,200 extensions](https://store.shopware.com) that are already available
-* 📖 &nbsp;Learn how to [develop extensions](https://developer.shopware.com) and everything else about the tech behind Shopware
+* 📖 &nbsp;Learn how to [develop extensions](https://developer.shopware.com) and everything else about the tech behind Shopware via our developer docs.
 * 🉐 &nbsp;[Translate](https://translate.shopware.com) Shopware or help by contributing to existing languages
 * 👍 &nbsp;Follow us on [Mastodon](https://phpc.social/@ShopwareDevs) to get updates
 * 🛠 &nbsp;[Report bugs](https://github.com/shopware/shopware/issues/new/choose) on GitHub
