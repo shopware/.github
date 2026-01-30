@@ -1,9 +1,9 @@
 # Allows shopware/docs-ci generate_schema workflow to pull required private plugin repos
 
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: repo:shopware/docs-ci:.*
+subject_pattern: repo:shopware/(store-api-reference|admin-api-reference|docs-ci):.*
 claim_pattern:
-  workflow_ref: shopware/docs-ci/.github/workflows/generate_schema\.yml@.*
+  workflow_ref: shopware/((store-api-reference|admin-api-reference)/.github/workflows/(manual_versioning|scheduled_versioning|plugin_.*_schema)|docs-ci/.github/workflows/generate_schema)\.yml@.*
 permissions:
   contents: read
 
