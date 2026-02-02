@@ -6,7 +6,7 @@ claim_pattern:
 permissions:
   actions: write
   contents: read
-  pull-requests: read
+  pull_requests: read
   checks: read
   statuses: read  
 
