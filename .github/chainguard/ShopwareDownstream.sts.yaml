@@ -6,6 +6,9 @@ claim_pattern:
 permissions:
   actions: write
   contents: read
+  pull_requests: read
+  checks: read
+  statuses: read  
 
 repositories:
   - SwagCommercial
