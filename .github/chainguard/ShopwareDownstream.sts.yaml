@@ -9,7 +9,7 @@ permissions:
   pull_requests: read
   checks: read
   statuses: read
-  administration: read
+  metadata: read
 
 repositories:
   - SwagCommercial
