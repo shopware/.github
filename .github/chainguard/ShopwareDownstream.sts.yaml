@@ -5,8 +5,8 @@ claim_pattern:
 
 permissions:
   actions: write
-  contents: read
-  pull_requests: write
+  contents: write
+  pull_requests: read
 
 repositories:
   - SwagCommercial
