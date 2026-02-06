@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: "repo:shopware/databus:.*"
+
+permissions:
+  contents: read
+
+repositories:
+  - nexus-contracts
