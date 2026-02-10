@@ -1,0 +1,11 @@
+issuer: https://token.actions.githubusercontent.com
+subject: repo:shopware-redstone/cluster-infrastructure:(ref:.*|pull_request|environment:.*)
+
+permissions:
+  contents: read
+  packages: read
+
+repositories:
+  - paas-backend
+  - fastly-operator
+  - shopware-operator
