@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject: repo:shopware-redstone/cluster-infrastructure:(ref:.*|pull_request|environment:.*)
+subject: repo:shopware-redstone/cluster-infrastructure:.*
 
 permissions:
   contents: read
