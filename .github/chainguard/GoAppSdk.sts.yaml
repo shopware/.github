@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: "repo:shopware/nexus-service:.*"
+subject_pattern: "repo:shopware/(nexus-service|spatial-3d-model-pipeline):.*"
 
 permissions:
   contents: read
