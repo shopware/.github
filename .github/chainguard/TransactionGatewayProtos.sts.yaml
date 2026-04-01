@@ -1,0 +1,8 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: "repo:shopware/(spatial-preview-generator-service|merchant-assistant-service|spatial-3d-model-pipeline):.*"
+
+permissions:
+  contents: read
+
+repositories:
+  - transaction-gateway-protos
