@@ -12,5 +12,6 @@ repositories:
   - terraform-app-hosting-infra-modules
   - terraform-app-hosting-ecs-module
   - terraform-app-hosting-static-web-module
+  - terraform-streaming-msk-module
   - services-aws-tags-module
   - services-aws-cloudfront-s3-module
