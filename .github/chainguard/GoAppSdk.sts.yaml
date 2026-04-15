@@ -1,5 +1,7 @@
+# Allows repositories in shopware organization read access to app-sdk-go repository
+
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: "repo:shopware/(nexus-service|spatial-3d-model-pipeline):.*"
+subject_pattern: repo:shopware/.*
 
 permissions:
   contents: read
