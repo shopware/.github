@@ -1,0 +1,18 @@
+# Allows pipe-fiction docs-sync workflow to read merged source PRs and commits
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/pipe-fiction:.*
+claim_pattern:
+  workflow_ref: shopware/pipe-fiction/.github/workflows/docs-sync-on-merge\.yml@.*
+
+permissions:
+  contents: read
+  pull_requests: read
+
+repositories:
+  - databus
+  - databus-conductor
+  - nexus-contracts
+  - nexus-e2e
+  - nexus-service
+  - nexus-workflow-builder
