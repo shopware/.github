@@ -1,0 +1,12 @@
+# Allows Nexus child repositories to dispatch docs-sync events to pipe-fiction
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/(databus|databus-conductor|nexus-e2e|nexus-workflow-builder|nexus-service|nexus-contracts):.*
+claim_pattern:
+  workflow_ref: shopware/(databus|databus-conductor|nexus-e2e|nexus-workflow-builder|nexus-service|nexus-contracts)/.github/workflows/request-pipe-fiction-doc-sync\.yml@.*
+
+permissions:
+  contents: write
+
+repositories:
+  - pipe-fiction
