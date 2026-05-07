@@ -15,3 +15,4 @@ repositories:
   - terraform-streaming-msk-module
   - services-aws-tags-module
   - services-aws-cloudfront-s3-module
+  - terraform-data-dynamodb-cdc-module
