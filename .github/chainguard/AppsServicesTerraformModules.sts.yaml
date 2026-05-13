@@ -16,3 +16,4 @@ repositories:
   - services-aws-tags-module
   - services-aws-cloudfront-s3-module
   - terraform-data-dynamodb-cdc-module
+  - terraform-data-mysql-cdc-module
