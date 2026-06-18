@@ -7,7 +7,7 @@ permissions:
   actions: write
   contents: write
   issues: write
-  pull_requests: read
+  pull_requests: write
 
 repositories:
   - SwagCommercial
