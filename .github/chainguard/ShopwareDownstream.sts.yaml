@@ -6,6 +6,7 @@ claim_pattern:
 permissions:
   actions: write
   contents: write
+  issues: write
   pull_requests: read
 
 repositories:
