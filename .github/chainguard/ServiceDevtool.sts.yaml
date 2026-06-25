@@ -1,7 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
 subject_pattern: repo:shopware/(swagrecommendations|SwagAIImageEditor|merchant-assistant-service):.*
 claim_pattern:
-  workflow_ref: shopware/(swagrecommendations|SwagAIImageEditor|merchant-assistant-service)/.github/workflows/*
+  workflow_ref: shopware/(swagrecommendations|SwagAIImageEditor|merchant-assistant-service)/.github/workflows/.*
 
 permissions:
   contents: read
