@@ -1,0 +1,11 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/shopware:ref:refs/heads/trunk
+claim_pattern:
+  workflow_ref: shopware/shopware/.github/workflows/link-private-pr.yml@refs/heads/trunk
+
+permissions:
+  pull_requests: read
+
+# Allow access to all repositories of the shopware organization
+repositories: []
+
