@@ -12,6 +12,7 @@ permissions:
 repositories:
   - databus
   - databus-conductor
+  - nexus-connector-sandboxes
   - nexus-contracts
   - nexus-e2e
   - nexus-service
