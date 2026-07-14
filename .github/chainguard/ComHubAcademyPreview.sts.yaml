@@ -1,0 +1,12 @@
+# Allows academy-contents to trigger preview env workflow in the ComHub
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/academy-contents:.*
+claim_pattern:
+  workflow_ref: shopware/academy-contents/.github/workflows/deploy-preview-hub.yml@.*
+permissions:
+  actions: write
+  contents: read
+
+repositories:
+  - community-hub
