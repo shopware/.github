@@ -8,6 +8,7 @@ permissions:
   members: read
   actions: write
   issues: write
+  pull_requests: write
 
 repositories:
   - saas
