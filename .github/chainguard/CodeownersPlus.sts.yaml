@@ -1,0 +1,19 @@
+# Allows the Code Owners workflow in shopware/shopware to request team reviews.
+# `members: read` is the point: GITHUB_TOKEN has no organization scope, so a team
+# reviewer request fails with "Could not resolve to a node with the global id".
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/shopware(-private)?:.*
+claim_pattern:
+  workflow_ref: shopware/shopware(-private)?/.github/workflows/codeowner.yml@.*
+
+permissions:
+  metadata: read
+  contents: read
+  members: read
+  issues: write
+  pull_requests: write
+
+repositories:
+  - shopware
+  - shopware-private
