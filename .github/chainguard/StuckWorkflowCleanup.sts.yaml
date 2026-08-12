@@ -9,5 +9,8 @@ permissions:
   actions: write
 
 repositories:
+  - shopware
+  - shopware-private
   - SwagCommercial
   - Rufus
+  - saas
