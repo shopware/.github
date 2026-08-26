@@ -1,7 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
 subject_pattern: repo:shopware/translations:.*
 claim_pattern:
-  workflow_ref: shopware/translations/.github/workflows/update-translations.yml@refs/heads/main
+  workflow_ref: shopware/translations/.github/workflows/(update-translations|crowdin-upload-language).yml@refs/heads/main
 
 permissions:
   contents: read
