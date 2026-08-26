@@ -7,7 +7,8 @@ permissions:
   contents: read
 
 repositories:
-  - SwagPublisher
+  - agentic-commerce
+  - Rufus
   - SwagB2bPlatform
   - SwagCmsExtensions
   - SwagCommercial
@@ -15,4 +16,5 @@ repositories:
   - SwagMigrationAssistant
   - SwagMigrationMagento
   - SwagPayPal
+  - SwagPublisher
   - SwagSocialShopping
