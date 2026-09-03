@@ -1,0 +1,12 @@
+# Allows Shopware Business Platform workflows to clone the Shopware platform repository.
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware-operations/shopware-business-platform:.*
+claim_pattern:
+  job_workflow_ref: shopware-operations/shopware-business-platform/\.github/workflows/.*
+
+permissions:
+  contents: read
+
+repositories:
+  - shopware
