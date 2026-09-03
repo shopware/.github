@@ -1,11 +1,11 @@
 # Lets the weekly release digest in shopware/service-enablement read the releases
-# of the platform repositories it summarises (main runs and PR dry runs).
+# of the platform repositories it summarises. Scheduled and manual runs on main only.
 # https://github.com/shopware/service-enablement/pull/368
 
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: repo:shopware/service-enablement:(ref:refs/heads/main|pull_request)
+subject_pattern: repo:shopware/service-enablement:ref:refs/heads/main
 claim_pattern:
-  workflow_ref: shopware/service-enablement/.github/workflows/release-digest.yml@.*
+  workflow_ref: shopware/service-enablement/.github/workflows/release-digest.yml@refs/heads/main
 
 permissions:
   contents: read
