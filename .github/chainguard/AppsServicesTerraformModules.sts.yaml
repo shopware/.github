@@ -1,7 +1,10 @@
 # Allows repositories in shopware organization read access to apps & services terraform modules
 
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: repo:shopware/.*
+# Repositories created after 2026-07-15 carry immutable OIDC subjects with the
+# numeric org and repo IDs: repo:shopware@612628/<repo>@<repo-id>:<context>.
+# The ID group stays optional so pre-cutoff repositories keep matching.
+subject_pattern: repo:shopware(@612628)?/.*
 claim_pattern:
   workflow_ref: shopware/.*/.github/workflows/.*
 
