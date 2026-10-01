@@ -1,0 +1,21 @@
+# Allows the services-maturity assessment workflow read access to the repos
+# its skills scan + the golden-path reference docs they read. The repository
+# list is kept in sync with services-maturity's data/ownership.yaml
+# automatically — see its .github/scripts/sync-octo-sts-policy.py and the
+# sync-octo-sts-policy job in maturity-assessment.yml. Everything else in
+# this file (issuer, subject matching, permissions) is hand-authored and
+# that automation never touches it.
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware(@612628)?/services-maturity:.*
+claim_pattern:
+  workflow_ref: shopware/services-maturity/.github/workflows/maturity-assessment\.yml@.*
+
+permissions:
+  contents: read
+
+repositories:
+  - gmv-reporting-service
+  - service-enablement
+  - service-registry
+  - transaction-gateway
