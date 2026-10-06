@@ -1,0 +1,13 @@
+# Allows shopware/SwagPayPal to push to shopware/SwagPayPal-private to keep them in sync
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/SwagPayPal:ref:refs/heads/(trunk|6.[0-9]+.x)
+claim_pattern:
+  workflow_ref: shopware/SwagPayPal/.github/workflows/sync.ya?ml@refs/heads/(trunk|6.[0-9]+.x)
+
+permissions:
+  contents: write
+  workflows: write
+
+repositories:
+  - SwagPayPal-private
