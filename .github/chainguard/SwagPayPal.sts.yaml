@@ -1,5 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: repo:shopware/SwagPayPal:.*
+# SwagPayPal-private was created after 2026-07-15, so its OIDC subject carries the
+# immutable org and repo IDs: repo:shopware@612628/SwagPayPal-private@1407476520:<context>.
+subject_pattern: repo:shopware(/SwagPayPal|@612628/SwagPayPal-private@1407476520):.*
 
 permissions:
   contents: read
