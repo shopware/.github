@@ -1,7 +1,7 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: repo:shopware/.*:.*
+subject_pattern: repo:shopware/(shopware|shopware-private|saas|SwagPayPal|SwagCommercial):.*
 claim_pattern:
-  workflow_ref: shopware/.*
+  workflow_ref: shopware/(shopware|shopware-private|saas|SwagPayPal|SwagCommercial)/\.github/workflows/.*
 permissions:
   contents: write
   pull_requests: write
