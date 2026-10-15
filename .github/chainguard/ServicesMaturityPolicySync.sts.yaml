@@ -1,0 +1,18 @@
+# Lets the services-maturity assessment workflow keep
+# ServicesMaturityAssessment.sts.yaml's repository list in sync with
+# data/ownership.yaml by opening a PR here itself, instead of a human
+# hand-editing that list every time a repo is added or removed. Scoped to
+# this repo only, and only to open a PR — never a direct push, same gate
+# every other change to this repo goes through.
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware(@612628)?/services-maturity:.*
+claim_pattern:
+  workflow_ref: shopware/services-maturity/.github/workflows/maturity-assessment\.yml@.*
+
+permissions:
+  contents: write
+  pull_requests: write
+
+repositories:
+  - .github
