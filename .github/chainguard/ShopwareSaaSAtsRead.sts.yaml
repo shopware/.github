@@ -10,3 +10,4 @@ permissions:
 
 repositories:
   - merchant-assistant-service
+  - swagrecommendations
