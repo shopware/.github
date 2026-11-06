@@ -7,6 +7,9 @@ permissions:
   metadata: read
   members: read
   pull_requests: write
+  # manage-stale-prs reads commits and labels to tell human activity from bot activity
+  contents: read
+  issues: read
 
 # Allow access to all repositories of the shopware organization
 repositories: []
