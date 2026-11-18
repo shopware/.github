@@ -1,0 +1,15 @@
+# Lets the runner image build in shopware/product-operations-runner-images open a PR
+# in .github-private that bumps the pinned RunsOn AMIs. Scheduled and manual runs on main only.
+# https://github.com/shopware/shopware/issues/23082
+
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: repo:shopware/product-operations-runner-images:ref:refs/heads/main
+claim_pattern:
+  workflow_ref: shopware/product-operations-runner-images/.github/workflows/build.yml@refs/heads/main
+
+permissions:
+  contents: write
+  pull_requests: write
+
+repositories:
+  - .github-private
